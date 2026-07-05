@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adam's Fiesta — Food & Drinks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#FFF7E8; color:#2B2420; font-family:'Poppins',sans-serif; }
+  .kicker { font:600 13px 'Fredoka',sans-serif; letter-spacing:.3em; text-transform:uppercase; }
+  h1,h2 { font-family:'Pacifico',cursive; font-weight:400; }
+  .papel { display:flex; height:20px; }
+  .papel div { flex:1; clip-path:polygon(0 0,100% 0,100% 55%,50% 100%,0 55%); }
+  .papel.flip div { clip-path:polygon(0 45%,50% 0,100% 45%,100% 100%,0 100%); }
+  .c1{background:#F2C14E}.c2{background:#E06A2B}.c3{background:#7BC043}.c4{background:#E0588B}.c5{background:#1B9AAA}
+
+  header { background:#2F7D58; text-align:center; padding:70px 24px 60px; position:relative; overflow:hidden; }
+  header .kicker { color:#A7E08A; }
+  header h1 { color:#FFF7E8; font-size:clamp(44px,8vw,72px); margin:16px 0 10px; line-height:1.15; }
+  header p { color:#D6EBDC; font-size:16px; max-width:520px; margin:0 auto; }
+  .back { display:inline-block; margin-top:26px; font:600 14px 'Fredoka',sans-serif; color:#FFF7E8; text-decoration:none; border:2px solid #A7E08A; border-radius:40px; padding:10px 24px; }
+  .back:hover { background:#A7E08A; color:#2F7D58; }
+
+  section { max-width:880px; margin:0 auto; padding:64px 24px 0; }
+  .sec-head { text-align:center; margin-bottom:36px; }
+  .sec-head h2 { font-size:clamp(34px,6vw,52px); color:#2F7D58; margin:12px 0 8px; }
+  .sec-head p { color:#6b6256; font-size:15px; max-width:560px; margin:0 auto; }
+
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px; }
+  .card { background:#FFFCF2; border-radius:22px; padding:26px 24px; box-shadow:0 10px 26px rgba(0,0,0,.08); border-top:6px solid var(--accent,#E06A2B); }
+  .card .emoji { font-size:34px; }
+  .card h3 { font:600 19px 'Fredoka',sans-serif; color:#2F7D58; margin:10px 0 8px; }
+  .card p { font-size:14px; line-height:1.6; color:#5c5348; }
+  .tag { display:inline-block; margin-top:12px; font:600 11px 'Fredoka',sans-serif; letter-spacing:.08em; text-transform:uppercase; background:#F2C14E33; color:#B07716; border-radius:20px; padding:4px 12px; }
+
+  .recipe { background:#2F7D58; border-radius:26px; padding:40px 34px; color:#FFF7E8; box-shadow:0 18px 40px rgba(0,0,0,.18); }
+  .recipe h3 { font:400 32px 'Pacifico',cursive; color:#F2C14E; margin-bottom:6px; }
+  .recipe .sub { color:#D6EBDC; font-size:14px; margin-bottom:22px; }
+  .recipe ul { list-style:none; }
+  .recipe li { padding:10px 0; border-bottom:1px dashed #ffffff33; font-size:15px; display:flex; gap:12px; align-items:baseline; }
+  .recipe li:last-child { border-bottom:none; }
+  .recipe .amt { font:600 14px 'Fredoka',sans-serif; color:#A7E08A; min-width:86px; }
+  .recipe .note { margin-top:18px; font-size:13px; color:#D6EBDC; font-style:italic; }
+
+  footer { margin-top:80px; background:#2F7D58; text-align:center; padding:46px 24px 54px; color:#D6EBDC; font-size:14px; position:relative; }
+  footer a { color:#F2C14E; text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="papel" style="position:absolute;top:0;left:0;right:0">
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div>
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div>
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
+  </div>
+  <div class="kicker">Lettuce celebrate — here's the menu</div>
+  <h1>Food &amp; Drinks</h1>
+  <p>Smoke, fire, and mezcal. Everything below comes off the Traeger, the Blackstone, or out of a well-shaken tin.</p>
+  <a class="back" href="/">← Back to the invite</a>
+</header>
+
+<!-- ============ OFF THE GRILL ============ -->
+<section>
+  <div class="sec-head">
+    <div class="kicker" style="color:#E06A2B">Low &amp; slow, hot &amp; fast</div>
+    <h2>Off the grill</h2>
+    <p>The Traeger does the heavy lifting. Deep smoke, big flavor, zero rush.</p>
+  </div>
+  <div class="grid">
+    <div class="card" style="--accent:#E06A2B">
+      <div class="emoji">🌮</div>
+      <h3>Carne Asada Street Tacos</h3>
+      <p>Skirt steak in a citrus-soy-garlic marinade, seared screaming hot, chopped and piled on doubled corn tortillas with onion, cilantro, and a charred-tomatillo salsa.</p>
+      <span class="tag">Crowd favorite</span>
+    </div>
+    <div class="card" style="--accent:#7BC043">
+      <div class="emoji">🌽</div>
+      <h3>Elote Bar</h3>
+      <p>Grilled sweet corn rolled in crema and cotija, dusted with Tajín and lime. Serve on the cob or as esquites in cups so pool hands stay clean-ish.</p>
+      <span class="tag">Veggie friendly</span>
+    </div>
+    <div class="card" style="--accent:#E0588B">
+      <div class="emoji">🌶️</div>
+      <h3>Bacon-Wrapped Jalapeño Poppers</h3>
+      <p>Already a proven hit on this Traeger. Cream cheese and chorizo-stuffed jalapeños, wrapped in bacon, smoked till the bacon crisps. Make double — they vanish.</p>
+      <span class="tag">Traeger classic</span>
+    </div>
+    <div class="card" style="--accent:#1B9AAA">
+      <div class="emoji">🍗</div>
+      <h3>Al Pastor Chicken Thighs</h3>
+      <p>Boneless thighs in an achiote-pineapple-guajillo marinade, grilled with pineapple rings alongside. Smoky, sweet, a little heat — taco-able or straight off the platter.</p>
+      <span class="tag">Marinade overnight</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ON THE BLACKSTONE ============ -->
+<section>
+  <div class="sec-head">
+    <div class="kicker" style="color:#1B9AAA">Flat-top magic</div>
+    <h2>On the Blackstone</h2>
+    <p>Fast, loud, and best eaten standing dripping wet in a towel.</p>
+  </div>
+  <div class="grid">
+    <div class="card" style="--accent:#F2C14E">
+      <div class="emoji">🧀</div>
+      <h3>Smash Burger Tacos</h3>
+      <p>A smash burger ball pressed flat onto a flour tortilla, griddled together, topped with oaxaca cheese, shredded lettuce, and taco-shop sauce. The viral one — and it deserves the hype.</p>
+      <span class="tag">Memorable</span>
+    </div>
+    <div class="card" style="--accent:#E06A2B">
+      <div class="emoji">🦐</div>
+      <h3>Camarones a la Diabla Skewers</h3>
+      <p>Shrimp seared on the flat top in a chipotle-garlic butter that gets spooned over at the end. Two minutes a side. Serve with grilled limes and torn tortillas for mopping.</p>
+      <span class="tag">Fast &amp; fiery</span>
+    </div>
+    <div class="card" style="--accent:#7BC043">
+      <div class="emoji">🫓</div>
+      <h3>Quesabirria-Style Quesadillas</h3>
+      <p>Tortillas dipped in consomé, griddled with melty cheese and shredded beef until the edges frizzle and crisp. Cut into wedges, serve with the consomé for dunking.</p>
+      <span class="tag">Dip everything</span>
+    </div>
+    <div class="card" style="--accent:#E0588B">
+      <div class="emoji">🍍</div>
+      <h3>Griddled Pineapple Sundaes</h3>
+      <p>Pineapple rings caramelized in brown sugar butter on the flat top, over vanilla ice cream with Tajín and honey. Dessert, handled — no oven required.</p>
+      <span class="tag">Dessert</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEZCAL BAR ============ -->
+<section>
+  <div class="sec-head">
+    <div class="kicker" style="color:#E0588B">Smoke in a glass</div>
+    <h2>The mezcal bar</h2>
+    <p>Deep, smoky, sipping-weather drinks. One bottle of decent espadín covers all of these.</p>
+  </div>
+  <div class="grid">
+    <div class="card" style="--accent:#2F7D58">
+      <div class="emoji">🔥</div>
+      <h3>Oaxaca Old Fashioned</h3>
+      <p>1.5 oz reposado + 0.5 oz mezcal, barspoon of agave, 2 dashes Angostura, big cube, orange peel flamed over the top. The deepest drink on the menu.</p>
+      <span class="tag">Slow sipper</span>
+    </div>
+    <div class="card" style="--accent:#E06A2B">
+      <div class="emoji">🥃</div>
+      <h3>Mezcal Negroni</h3>
+      <p>Equal parts mezcal, Campari, and sweet vermouth over ice with an orange slice. Bitter, smoky, dangerously easy to batch in a pitcher before guests arrive.</p>
+      <span class="tag">Batchable</span>
+    </div>
+    <div class="card" style="--accent:#F2C14E">
+      <div class="emoji">🍹</div>
+      <h3>Smoky Paloma</h3>
+      <p>2 oz mezcal, squeeze of lime, Squirt or Jarritos grapefruit over ice, Tajín rim. The pool drink — tall, cold, and refillable all afternoon.</p>
+      <span class="tag">Poolside</span>
+    </div>
+    <div class="card" style="--accent:#1B9AAA">
+      <div class="emoji">🍫</div>
+      <h3>Mezcal Carajillo</h3>
+      <p>Licor 43 and a shot of espresso, shaken over ice, floated with 0.5 oz mezcal. Sweet, dark, smoky — the late-afternoon pick-me-up before round two of cannonballs.</p>
+      <span class="tag">After dinner</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KIRKLAND MARGARITA ============ -->
+<section>
+  <div class="sec-head">
+    <div class="kicker" style="color:#7BC043">The house pour</div>
+    <h2>The Kirkland margarita</h2>
+    <p>No shame, all flavor. This is the workhorse pitcher of the party.</p>
+  </div>
+  <div class="recipe">
+    <h3>Pitcher recipe — serves ~8</h3>
+    <div class="sub">Costco run: one bottle of Kirkland Silver, limes, and you're most of the way there.</div>
+    <ul>
+      <li><span class="amt">2 cups</span> Kirkland Signature Silver Tequila</li>
+      <li><span class="amt">1 cup</span> fresh-squeezed lime juice (10–12 limes — fresh matters, this is the whole trick)</li>
+      <li><span class="amt">¾ cup</span> orange liqueur (Kirkland's triple sec is fine, Cointreau if fancy)</li>
+      <li><span class="amt">½ cup</span> agave nectar, adjusted to taste</li>
+      <li><span class="amt">1</span> big pinch of salt, straight into the pitcher</li>
+      <li><span class="amt">Rim</span> half salt, half Tajín — do a tray of glasses ahead of time</li>
+    </ul>
+    <div class="note">Stir with plenty of ice, taste, and add a splash of water if it bites. Float 0.5 oz of mezcal on top of any glass to upgrade it to the "birthday boy version."</div>
+  </div>
+</section>
+
+<footer>
+  <div class="papel" style="position:absolute;top:0;left:0;right:0">
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div>
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div>
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
+  </div>
+  <div style="font:400 26px 'Pacifico',cursive; color:#FFF7E8; margin-bottom:8px">Adam's Fiesta</div>
+  <div>Saturday, July 18 · Drew's Pool, Plymouth MN</div>
+  <div style="margin-top:10px">Haven't RSVP'd yet? <a href="/">Do it here</a> 🌮</div>
+</footer>
+
+</body>
+</html>
