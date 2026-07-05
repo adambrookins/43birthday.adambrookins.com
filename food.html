@@ -32,6 +32,7 @@
   .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px; }
   .card { background:#FFFCF2; border-radius:22px; padding:26px 24px; box-shadow:0 10px 26px rgba(0,0,0,.08); border-top:6px solid var(--accent,#E06A2B); }
   .card .emoji { font-size:34px; }
+  .card .art svg { width:100%; height:auto; display:block; border-radius:14px; }
   .card h3 { font:600 19px 'Fredoka',sans-serif; color:#2F7D58; margin:10px 0 8px; }
   .card p { font-size:14px; line-height:1.6; color:#5c5348; }
   .tag { display:inline-block; margin-top:12px; font:600 11px 'Fredoka',sans-serif; letter-spacing:.08em; text-transform:uppercase; background:#F2C14E33; color:#B07716; border-radius:20px; padding:4px 12px; }
@@ -72,25 +73,25 @@
   </div>
   <div class="grid">
     <div class="card" style="--accent:#E06A2B">
-      <div class="emoji">🌮</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="100" rx="80" ry="8" fill="#00000012"/><g transform="translate(30 30)"><path d="M0 60 A40 40 0 0 1 80 60 Z" fill="#F2C14E"/><path d="M8 60 A32 32 0 0 1 72 60 Z" fill="#8C5A2B"/><circle cx="24" cy="52" r="4" fill="#7BC043"/><circle cx="40" cy="48" r="4" fill="#E0588B"/><circle cx="56" cy="52" r="4" fill="#7BC043"/><path d="M0 60 A40 40 0 0 0 34 21 L 40 60 Z" fill="#EDB13B"/></g><g transform="translate(115 40)"><path d="M0 60 A40 40 0 0 1 80 60 Z" fill="#F2C14E"/><path d="M8 60 A32 32 0 0 1 72 60 Z" fill="#8C5A2B"/><circle cx="24" cy="52" r="4" fill="#FFF"/><circle cx="40" cy="48" r="4" fill="#7BC043"/><circle cx="56" cy="52" r="4" fill="#E06A2B"/><path d="M0 60 A40 40 0 0 0 34 21 L 40 60 Z" fill="#EDB13B"/></g></svg></div>
       <h3>Carne Asada Street Tacos</h3>
       <p>Skirt steak in a citrus-soy-garlic marinade, seared screaming hot, chopped and piled on doubled corn tortillas with onion, cilantro, and a charred-tomatillo salsa.</p>
       <span class="tag">Crowd favorite</span>
     </div>
     <div class="card" style="--accent:#7BC043">
-      <div class="emoji">🌽</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="104" rx="60" ry="7" fill="#00000012"/><rect x="105" y="78" width="10" height="30" rx="5" fill="#C89B6C"/><g><ellipse cx="110" cy="50" rx="26" ry="40" fill="#F2C14E"/><g fill="#EDB13B"><circle cx="100" cy="26" r="4"/><circle cx="120" cy="26" r="4"/><circle cx="110" cy="34" r="4"/><circle cx="96" cy="42" r="4"/><circle cx="124" cy="42" r="4"/><circle cx="110" cy="50" r="4"/><circle cx="98" cy="60" r="4"/><circle cx="122" cy="60" r="4"/><circle cx="110" cy="68" r="4"/></g><path d="M92 24 Q110 4 128 24 Q120 16 110 16 Q100 16 92 24Z" fill="#FFFFFF" opacity=".85"/><path d="M96 20 Q80 34 84 62 Q70 44 78 26 Q84 16 96 20Z" fill="#7BC043"/><path d="M124 20 Q140 34 136 62 Q150 44 142 26 Q136 16 124 20Z" fill="#7BC043"/><g fill="#E06A2B"><circle cx="104" cy="30" r="1.8"/><circle cx="118" cy="38" r="1.8"/><circle cx="102" cy="52" r="1.8"/><circle cx="116" cy="62" r="1.8"/></g></g></svg></div>
       <h3>Elote Bar</h3>
       <p>Grilled sweet corn rolled in crema and cotija, dusted with Tajín and lime. Serve on the cob or as esquites in cups so pool hands stay clean-ish.</p>
       <span class="tag">Veggie friendly</span>
     </div>
     <div class="card" style="--accent:#E0588B">
-      <div class="emoji">🌶️</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="100" rx="70" ry="7" fill="#00000012"/><g transform="rotate(-18 110 62)"><path d="M60 62 Q60 38 88 38 L150 38 Q172 38 172 60 Q172 84 148 86 L86 86 Q60 84 60 62Z" fill="#7BC043"/><path d="M64 56 Q80 44 96 56 Q112 68 128 56 Q144 44 160 56 L160 70 Q144 82 128 70 Q112 58 96 70 Q80 82 66 72Z" fill="#E0588B" opacity=".9"/><path d="M64 52 Q80 40 96 52 Q112 64 128 52 Q144 40 160 52" stroke="#FFF7E8" stroke-width="4" fill="none" opacity=".8"/><path d="M58 60 Q44 58 40 44 Q52 44 60 52Z" fill="#2F7D58"/><ellipse cx="166" cy="60" rx="10" ry="12" fill="#FFFCF2"/></g></svg></div>
       <h3>Bacon-Wrapped Jalapeño Poppers</h3>
       <p>Already a proven hit on this Traeger. Cream cheese and chorizo-stuffed jalapeños, wrapped in bacon, smoked till the bacon crisps. Make double — they vanish.</p>
       <span class="tag">Traeger classic</span>
     </div>
     <div class="card" style="--accent:#1B9AAA">
-      <div class="emoji">🍗</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="102" rx="72" ry="7" fill="#00000012"/><g transform="translate(48 26) rotate(-10)"><path d="M20 30 Q20 6 48 6 Q78 6 80 32 Q82 56 56 62 Q46 64 38 60 L20 70 Q12 74 10 66 Q8 60 16 56 L28 50 Q18 44 20 30Z" fill="#C9752E"/><path d="M30 22 Q34 12 46 12" stroke="#A85B1E" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="60" cy="30" r="3" fill="#A85B1E"/><circle cx="46" cy="42" r="3" fill="#A85B1E"/></g><g transform="translate(140 50)"><circle cx="24" cy="24" r="24" fill="#F2C14E"/><circle cx="24" cy="24" r="10" fill="#FDF3DC"/><g stroke="#EDB13B" stroke-width="3"><line x1="24" y1="2" x2="24" y2="12"/><line x1="24" y1="36" x2="24" y2="46"/><line x1="2" y1="24" x2="12" y2="24"/><line x1="36" y1="24" x2="46" y2="24"/></g></g></svg></div>
       <h3>Al Pastor Chicken Thighs</h3>
       <p>Boneless thighs in an achiote-pineapple-guajillo marinade, grilled with pineapple rings alongside. Smoky, sweet, a little heat — taco-able or straight off the platter.</p>
       <span class="tag">Marinade overnight</span>
@@ -107,25 +108,25 @@
   </div>
   <div class="grid">
     <div class="card" style="--accent:#F2C14E">
-      <div class="emoji">🧀</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="102" rx="76" ry="7" fill="#00000012"/><g transform="translate(40 26)"><path d="M0 70 A70 70 0 0 1 140 70 Z" fill="#F2C14E"/><path d="M10 70 A60 60 0 0 1 130 70 Z" fill="#8C5A2B"/><path d="M16 70 A54 54 0 0 1 124 70 L124 70 Q120 58 108 62 Q96 66 84 60 Q72 54 60 62 Q48 70 36 62 Q24 56 16 70Z" fill="#F7B733"/><g fill="#7BC043"><circle cx="46" cy="58" r="4"/><circle cx="70" cy="52" r="4"/><circle cx="94" cy="58" r="4"/></g><path d="M0 70 L140 70" stroke="#EDB13B" stroke-width="3"/></g></svg></div>
       <h3>Smash Burger Tacos</h3>
       <p>A smash burger ball pressed flat onto a flour tortilla, griddled together, topped with oaxaca cheese, shredded lettuce, and taco-shop sauce. The viral one — and it deserves the hype.</p>
       <span class="tag">Memorable</span>
     </div>
     <div class="card" style="--accent:#E06A2B">
-      <div class="emoji">🦐</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="102" rx="76" ry="7" fill="#00000012"/><line x1="30" y1="88" x2="196" y2="30" stroke="#C89B6C" stroke-width="5" stroke-linecap="round"/><g fill="#E0588B"><g transform="translate(48 56) rotate(-19)"><path d="M0 16 Q0 0 18 0 Q36 0 36 16 Q36 30 20 32 L20 40 Q10 40 12 32 Q0 28 0 16Z"/><path d="M34 8 Q44 4 46 12 Q40 14 34 14Z" fill="#C33F6B"/></g><g transform="translate(96 40) rotate(-19)"><path d="M0 16 Q0 0 18 0 Q36 0 36 16 Q36 30 20 32 L20 40 Q10 40 12 32 Q0 28 0 16Z"/><path d="M34 8 Q44 4 46 12 Q40 14 34 14Z" fill="#C33F6B"/></g><g transform="translate(144 24) rotate(-19)"><path d="M0 16 Q0 0 18 0 Q36 0 36 16 Q36 30 20 32 L20 40 Q10 40 12 32 Q0 28 0 16Z"/><path d="M34 8 Q44 4 46 12 Q40 14 34 14Z" fill="#C33F6B"/></g></g><g fill="#7BC043"><circle cx="76" cy="52" r="3"/><circle cx="124" cy="36" r="3"/></g></svg></div>
       <h3>Camarones a la Diabla Skewers</h3>
       <p>Shrimp seared on the flat top in a chipotle-garlic butter that gets spooned over at the end. Two minutes a side. Serve with grilled limes and torn tortillas for mopping.</p>
       <span class="tag">Fast &amp; fiery</span>
     </div>
     <div class="card" style="--accent:#7BC043">
-      <div class="emoji">🫓</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="104" rx="80" ry="7" fill="#00000012"/><g transform="translate(24 30)"><path d="M0 66 L44 0 L88 66 Z" fill="#EDA33B"/><path d="M8 62 L44 8 L80 62 Z" fill="#F2C14E"/><path d="M14 60 Q30 50 44 60 Q58 70 74 60 L74 62 L14 62Z" fill="#F7E1A0"/><circle cx="36" cy="42" r="3" fill="#8C5A2B"/><circle cx="52" cy="48" r="3" fill="#8C5A2B"/></g><g transform="translate(130 46)"><path d="M0 20 Q0 8 12 8 L56 8 Q68 8 68 20 Q68 44 34 46 Q0 44 0 20Z" fill="#E06A2B"/><ellipse cx="34" cy="12" rx="30" ry="8" fill="#B84A18"/><ellipse cx="34" cy="11" rx="24" ry="6" fill="#D95F24"/><circle cx="24" cy="10" r="2.4" fill="#F2C14E"/><circle cx="42" cy="12" r="2.4" fill="#F2C14E"/><path d="M12 8 Q10 0 18 -2" stroke="#ffffff88" stroke-width="3" fill="none"/></g></svg></div>
       <h3>Quesabirria-Style Quesadillas</h3>
       <p>Tortillas dipped in consomé, griddled with melty cheese and shredded beef until the edges frizzle and crisp. Cut into wedges, serve with the consomé for dunking.</p>
       <span class="tag">Dip everything</span>
     </div>
     <div class="card" style="--accent:#E0588B">
-      <div class="emoji">🍍</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="104" rx="70" ry="7" fill="#00000012"/><g transform="translate(30 44)"><circle cx="26" cy="26" r="26" fill="#F2C14E"/><circle cx="26" cy="26" r="11" fill="#FDF3DC"/><g stroke="#E06A2B" stroke-width="2" opacity=".7"><line x1="26" y1="2" x2="26" y2="13"/><line x1="26" y1="39" x2="26" y2="50"/><line x1="2" y1="26" x2="13" y2="26"/><line x1="39" y1="26" x2="50" y2="26"/></g></g><g transform="translate(108 18)"><path d="M10 56 L74 56 L54 100 L30 100 Z" fill="#1B9AAA"/><path d="M6 56 L78 56 L78 62 L6 62Z" fill="#137785"/><circle cx="30" cy="40" r="17" fill="#FFFCF2"/><circle cx="54" cy="40" r="17" fill="#FFF3D6"/><circle cx="42" cy="24" r="17" fill="#FFFCF2"/><path d="M42 8 Q46 2 42 -4" stroke="#E06A2B" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="42" cy="10" r="6" fill="#E0588B"/><g fill="#E06A2B" opacity=".85"><circle cx="30" cy="32" r="1.8"/><circle cx="50" cy="28" r="1.8"/><circle cx="44" cy="42" r="1.8"/></g></g></svg></div>
       <h3>Griddled Pineapple Sundaes</h3>
       <p>Pineapple rings caramelized in brown sugar butter on the flat top, over vanilla ice cream with Tajín and honey. Dessert, handled — no oven required.</p>
       <span class="tag">Dessert</span>
@@ -142,25 +143,25 @@
   </div>
   <div class="grid">
     <div class="card" style="--accent:#2F7D58">
-      <div class="emoji">🔥</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="104" rx="56" ry="7" fill="#00000012"/><g transform="translate(72 20)"><path d="M0 6 L76 6 L70 80 Q70 86 62 86 L14 86 Q6 86 6 80 Z" fill="#ffffff" opacity=".55"/><path d="M4 34 L72 34 L70 80 Q70 86 62 86 L14 86 Q6 86 6 80 Z" fill="#C9752E"/><rect x="20" y="40" width="30" height="30" rx="5" fill="#ffffff" opacity=".5"/><path d="M60 26 Q78 18 74 2 Q88 12 80 28 Q72 40 60 34Z" fill="#E06A2B"/><path d="M68 20 Q76 14 74 6" stroke="#F2C14E" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M0 6 L76 6" stroke="#ffffff" stroke-width="4" opacity=".7"/></g></svg></div>
       <h3>Oaxaca Old Fashioned</h3>
       <p>1.5 oz reposado + 0.5 oz mezcal, barspoon of agave, 2 dashes Angostura, big cube, orange peel flamed over the top. The deepest drink on the menu.</p>
       <span class="tag">Slow sipper</span>
     </div>
     <div class="card" style="--accent:#E06A2B">
-      <div class="emoji">🥃</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="104" rx="56" ry="7" fill="#00000012"/><g transform="translate(72 20)"><path d="M0 6 L76 6 L70 80 Q70 86 62 86 L14 86 Q6 86 6 80 Z" fill="#ffffff" opacity=".55"/><path d="M4 30 L72 30 L70 80 Q70 86 62 86 L14 86 Q6 86 6 80 Z" fill="#D93B3B"/><rect x="14" y="36" width="22" height="26" rx="4" fill="#ffffff" opacity=".4"/><g transform="translate(52 4)"><circle cx="12" cy="12" r="14" fill="#E06A2B"/><circle cx="12" cy="12" r="9" fill="#F2C14E"/><g stroke="#E06A2B" stroke-width="2"><line x1="12" y1="3" x2="12" y2="21"/><line x1="3" y1="12" x2="21" y2="12"/></g></g><path d="M0 6 L76 6" stroke="#ffffff" stroke-width="4" opacity=".7"/></g></svg></div>
       <h3>Mezcal Negroni</h3>
       <p>Equal parts mezcal, Campari, and sweet vermouth over ice with an orange slice. Bitter, smoky, dangerously easy to batch in a pitcher before guests arrive.</p>
       <span class="tag">Batchable</span>
     </div>
     <div class="card" style="--accent:#F2C14E">
-      <div class="emoji">🍹</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="104" rx="52" ry="7" fill="#00000012"/><g transform="translate(82 14)"><path d="M2 8 L54 8 L50 86 Q50 92 42 92 L14 92 Q6 92 6 86 Z" fill="#ffffff" opacity=".55"/><path d="M5 26 L51 26 L50 86 Q50 92 42 92 L14 92 Q6 92 6 86 Z" fill="#F49FBC"/><rect x="12" y="32" width="14" height="20" rx="3" fill="#ffffff" opacity=".45"/><rect x="0" y="4" width="58" height="8" rx="4" fill="#E06A2B"/><g stroke="#8ED4DD" stroke-width="4" stroke-linecap="round"><line x1="40" y1="0" x2="34" y2="34"/></g><g transform="translate(40 12)"><path d="M0 0 A16 16 0 0 1 16 16 L0 16Z" fill="#7BC043"/><path d="M3 3 A12 12 0 0 1 13 13 L3 13Z" fill="#B9E48E"/></g></g></svg></div>
       <h3>Smoky Paloma</h3>
       <p>2 oz mezcal, squeeze of lime, Squirt or Jarritos grapefruit over ice, Tajín rim. The pool drink — tall, cold, and refillable all afternoon.</p>
       <span class="tag">Poolside</span>
     </div>
     <div class="card" style="--accent:#1B9AAA">
-      <div class="emoji">🍫</div>
+      <div class="art"><svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="220" height="120" rx="14" fill="#FDF3DC"/><ellipse cx="110" cy="104" rx="52" ry="7" fill="#00000012"/><g transform="translate(78 18)"><path d="M0 4 L64 4 L58 78 Q58 86 50 86 L14 86 Q6 86 6 78 Z" fill="#ffffff" opacity=".55"/><path d="M3 30 L61 30 L58 78 Q58 86 50 86 L14 86 Q6 86 6 78 Z" fill="#4A2C1A"/><path d="M4 30 L60 30 L59 44 L5 44 Z" fill="#C9975B"/><rect x="14" y="48" width="16" height="24" rx="4" fill="#ffffff" opacity=".25"/><g fill="#6B4226"><circle cx="24" cy="14" r="6"/><circle cx="38" cy="18" r="6"/><circle cx="32" cy="10" r="6"/></g><path d="M0 4 L64 4" stroke="#ffffff" stroke-width="4" opacity=".7"/></g></svg></div>
       <h3>Mezcal Carajillo</h3>
       <p>Licor 43 and a shot of espresso, shaken over ice, floated with 0.5 oz mezcal. Sweet, dark, smoky — the late-afternoon pick-me-up before round two of cannonballs.</p>
       <span class="tag">After dinner</span>
@@ -178,6 +179,7 @@
   <div class="recipe">
     <h3>Pitcher recipe — serves ~8</h3>
     <div class="sub">Costco run: one bottle of Kirkland Silver, limes, and you're most of the way there.</div>
+    <svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg" role="img" style="width:200px;max-width:100%;display:block;margin:0 auto 20px"><ellipse cx="110" cy="110" rx="72" ry="7" fill="#00000030"/><g transform="translate(58 8)"><path d="M8 14 L96 14 L88 96 Q88 104 78 104 L26 104 Q16 104 16 96 Z" fill="#ffffff" opacity=".35"/><path d="M12 34 L92 34 L88 96 Q88 104 78 104 L26 104 Q16 104 16 96 Z" fill="#C9E88A"/><rect x="24" y="42" width="20" height="30" rx="5" fill="#ffffff" opacity=".5"/><path d="M96 24 Q116 30 112 52 Q110 68 94 70" stroke="#ffffff" stroke-width="8" fill="none" opacity=".5" stroke-linecap="round"/><rect x="2" y="10" width="100" height="9" rx="4.5" fill="#F2C14E"/><g transform="translate(76 18)"><path d="M0 0 A17 17 0 0 1 17 17 L0 17Z" fill="#7BC043"/><path d="M3 3 A13 13 0 0 1 14 14 L3 14Z" fill="#B9E48E"/></g></g></svg>
     <ul>
       <li><span class="amt">2 cups</span> Kirkland Signature Silver Tequila</li>
       <li><span class="amt">1 cup</span> fresh-squeezed lime juice (10–12 limes — fresh matters, this is the whole trick)</li>
